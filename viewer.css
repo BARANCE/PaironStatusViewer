@@ -1,0 +1,233 @@
+﻿body {
+	padding : 0px;
+	margin : 0px;
+	background-color : #000000;
+	color : #ffffff;
+	font-size : xx-small;
+	font-family : "Meiryo UI";
+}
+
+div.contBlock {
+	position : absolute;
+	margin : 0px;
+	padding : 0px;
+	left : 5px;
+	top : 5px;
+	width : 640px;
+	height : 70px;
+	background-color : #666666;
+	overflow : hidden;
+}
+
+table.statusTable {
+	margin : 0px;
+	padding : 0px;
+	border-collapse : collapse;
+	border-spacing : 0px;
+	font-size : 12px;
+	position :absolute;
+	width : 130px;
+	height : 100%;
+}
+td.statusHeadTd {
+	line-height : 10px;
+	text-align : center;
+}
+td.statusLabelTdTop {
+	line-height : 10px;
+	text-align : right;
+}
+td.statusValueTd {
+	line-height : 10px;
+	font-weight : bold;
+	color : #ff0000;
+	min-width : 50px;
+	text-align : right;
+}
+td.statusLabelTdEnd {
+	line-height : 10px;
+}
+
+div.garphDiv {
+	position : absolute;
+	left : 135px;
+	width : 300px;
+	height : 100%;
+}
+div.rankGraphDiv {
+	position : absolute;
+	top : 3px;
+	width : 100%;
+	height : 10px;
+	background-color : #000000;
+	border-style : solid none solid solid;
+	border-color : #ffffff;
+	border-width : 1px;
+	overflow : hidden;
+	z-index : 11;
+}
+div.rankInnerDiv1 {
+	position : absolute;
+	height : 20px;
+	background : linear-gradient(#ff0000, #990000);
+	border-style : none solid none none;
+	border-color : #ffffff;
+	border-width : 1px;
+	z-index : 10;
+}
+div.rankInnerDiv2 {
+	position : absolute;
+	height : 20px;
+	background : linear-gradient(#ffd700, #cca400);
+	border-style : none solid none none;
+	border-color : #ffffff;
+	border-width : 1px;
+	z-index : 9;
+}
+div.rankInnerDiv3 {
+	position : absolute;
+	height : 20px;
+	background : linear-gradient(#32cd32, #009a00);
+	border-style : none solid none none;
+	border-color : #ffffff;
+	border-width : 1px;
+	z-index : 8
+}
+div.rankInnerDiv4 {
+	position : absolute;
+	height : 20px;
+	background : linear-gradient(#87cefa, #549bc7);
+	border-style : none solid none none;
+	border-color : #ffffff;
+	border-width : 1px;
+	z-index : 7;
+}
+
+div.rankDataDiv {
+	position : absolute;
+	top : 18px;
+	width : 300px;
+	height : 20px;
+	font-size : 11px;
+}
+span.rankValueSpan {
+	margin : 0px;
+	padding : 0px 4px 0px 4px;
+	background-color : #cccccc;
+	color : #000000;
+	border-radius: 5px;
+	font-weight : bold;
+}
+
+div.goalGraphDiv {
+	position : absolute;
+	top : 36px;
+	width : 100%;
+	height : 10px;
+	background-color : #000000;
+	border-style : solid none solid solid;
+	border-color : #ffffff;
+	border-width : 1px;
+	overflow : hidden;
+	z-index : 21;
+}
+div.goalInnerDiv1 {
+	position : absolute;
+	height : 20px;
+	background : linear-gradient(#ffa500, #cc7200);
+	border-style : none solid none none;
+	border-color : #ffffff;
+	border-width : 1px;
+	z-index : 20;
+}
+div.goalInnerDiv2 {
+	position : absolute;
+	height : 20px;
+	background : linear-gradient(#0000cd, #00009a);
+	border-style : none solid none none;
+	border-color : #ffffff;
+	border-width : 1px;
+	z-index : 19;
+}
+div.goalInnerDiv3 {
+	position : absolute;
+	height : 20px;
+	background : linear-gradient(#ff69b4, #bb2570);
+	border-style : none solid none none;
+	border-color : #ffffff;
+	border-width : 1px;
+	z-index : 18;
+}
+div.goalDataDiv {
+	position : absolute;
+	top : 51px;
+	width : 300px;
+	height : 20px;
+	font-size : 11px;
+}
+
+canvas.processGraphCanvas {
+	position : absolute;
+	top : 0px;
+	left : 440px;
+	height : 100%;
+	width : 195px;
+	border-radius: 10px;
+	background-color : #000000;
+}
+
+/* input block */
+div.inputBlock {
+	position : absolute;
+	top : 80px;
+	left : 5px;
+	width : 640px;
+	height : 80px;
+	background-color : #333333;
+	font-size : 12px;
+}
+div.inputBlock label {
+	vertical-align : middle;
+}
+div.inputBlock input {
+	margin : 0px;
+	padding : 0px;
+	font-size : 12px;
+	font-family : "Meiryo UI";
+	width : 50px;
+	height : 22px;
+	vertical-align : middle;
+}
+
+form.gradeForm {
+	margin : 0px;
+	padding : 0px;
+	position : absolute;
+	right : 0px;
+	top : 0px;
+	height : 100%;
+	width : 200px;
+}
+div.inputBlock select.inputGradeList {
+	margin : 0px;
+	padding : 0px;
+	width : 150px;
+	height : 75px;
+	font-size : 12px;
+	font-family : "Meiryo UI";
+	border-style : solid;
+	border-color : #666666;
+	border-width : 1px;
+}
+div.inputBlock input.inputGradeText {
+	width : 150px;
+	border-style : solid;
+	border-color : #666666;
+	border-width : 1px;
+}
+div.inputBlock input.inputGradeButton {
+	width : 42px;
+	border-style : solid;
+	border-color : #666666;
+	border-width : 1px;
+}
