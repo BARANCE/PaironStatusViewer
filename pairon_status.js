@@ -6,7 +6,7 @@ var BASIC_RANK_2ND = 1;
 var BASIC_RANK_3RD = 2;
 var BASIC_RANK_4TH = 3;
 var BASIC_RANK_UNKNOWN = 4;
-var GRADE_HISTORY_NUM = 10;
+var GRADE_HISTORY_NUM = 15;
 
 // Default value of status
 var DEFAULT_RANK = [0.2598, 0.2967, 0.2567, 0.1868];
@@ -639,8 +639,8 @@ PaironStatus.prototype = {
 		if (this.cookie.checkCookie("grade") == LIB_STORAGE_OK) {
 			var gradeStr = this.cookie.getCookie("grade");
 			var gradeStrLength = gradeStr.length;
-			if(gradeStrLength == GRADE_HISTORY_NUM) {
-				for(var i = 0; i < GRADE_HISTORY_NUM; i++) {
+			//if(gradeStrLength == GRADE_HISTORY_NUM) {
+				for(var i = 0; i < gradeStrLength; i++) {
 					var loadGrade = parseInt(gradeStr.substring(i, i + 1));
 					if(loadGrade == BASIC_RANK_1ST ||
 					   loadGrade == BASIC_RANK_2ND ||
@@ -653,9 +653,9 @@ PaironStatus.prototype = {
 						console.log("unknown grade string is received.");
 					}
 				}
-			} else {
+			/*} else {
 				console.log("grade string is invalid length.");
-			}
+			}*/
 			
 		} else {
 			console.log("default grade history is loaded.");
