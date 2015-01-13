@@ -139,7 +139,7 @@ XmlReader.prototype = {
 	},
 	loadXml : function(path) {
 		var ret = LIB_STORAGE_OK;
-	
+		
 		var REQUEST_DATA = null;
 		var HTTP_METHOD = "GET"
 		var ASYNC_FLAG = true;
@@ -170,6 +170,7 @@ XmlReader.prototype = {
 			return LIB_STORAGE_XML_ERROR_REJECT_REQUEST;
 		}
 		
+		
 		return ret;
 	},
 	getReadyState : function() {
@@ -178,6 +179,28 @@ XmlReader.prototype = {
 	setReadyState : function(state) {
 		this.readyState = state;
 		return LIB_STORAGE_OK;
+	},
+	afterResponse2 : function() {
+		var ret = LIB_STORAGE_OK;
+		var completeState = LIB_STORAGE_OK;
+		
+		if (!this.xmlObj) {
+			console.log("xml is not loaded.");
+			completeState = LIB_STORAGE_XML_INVALID_RESPONSE;
+		}
+		if (this.xmlObj["parsererror"]) {
+			console.log(this.xmlObj["parsererror"]);
+			return LIB_STORAGE_XML_ERROR_REJECT_REQUEST;
+			completeState = LIB_STORAGE_XML_INVALID_RESPONSE;
+		}
+		
+		var callback = this.getXhrCallback();
+		if (callback) {
+			console.log("ok");
+			// callback(completeState, this, this.getXhrCallbackArg());
+		}
+		
+		return ret;
 	},
 	afterResponse : function() {
 		var ret = LIB_STORAGE_OK;

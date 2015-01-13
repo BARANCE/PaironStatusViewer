@@ -41,6 +41,54 @@ PaironStatus.prototype = {
 		var fname = "initialize()";
 		var caller = this.name + "::" + fname;
 		
+		ret = this.createViewer();
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		return ret;
+	},
+	terminate : function() {
+		return PAIRON_OK;
+	},
+	getRank : function() {
+		return this.rank;
+	},
+	createViewer : function() {
+		var ret = PAIRON_OK;
+		var fname = "createViewer()";
+		var caller = this.name + "::" + fname;
+		
+		this.xmlReader = new XmlReader();
+		
+		ret = this.xmlReader.initialize();
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		var xhrCallback = function(state, reader, arg) {
+			if (state == LIB_STORAGE_OK) {
+				var viewerDivElement = reader.getXml().getElementById("view");
+				
+				ret = arg.createViewerAfterCallback(viewerDivElement);
+				if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+			} else {
+				DEBUG(caller, "Cannot read xml response.");
+			}
+		};
+		
+		ret = this.xmlReader.setXhrCallback(xhrCallback, this);
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		ret = this.xmlReader.loadXml("pairon_status.xml");
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		return ret;
+	},
+	createViewerAfterCallback : function(viewerDivElement) {
+		var ret = PAIRON_OK;
+		var fname = "createViewerAfterCallback()";
+		var caller = this.name + "::" + fname;
+		
+		this.topElement = gi("CONT_TOTAL_STATUS");
+		this.topElement.innerHTML = viewerDivElement.innerHTML;
+		
 		this.contElement = gi(PAIRON_STATUS_CONT_ELEMENT_NAME);
 		if (!this.contElement) {
 			console.log("element of '" + PAIRON_STATUS_CONT_ELEMENT_NAME + "' is not found.");
@@ -57,15 +105,13 @@ PaironStatus.prototype = {
 		ret = this.saveStatus();
 		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
 		
+		this.statusInput = new PaironStatusInput();
+		ret = this.statusInput.initialize(this);
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
 		this.update();
 		
 		return ret;
-	},
-	terminate : function() {
-		return PAIRON_OK;
-	},
-	getRank : function() {
-		return this.rank;
 	},
 	show : function() {
 		this.contElement.style.display = "block";
@@ -274,24 +320,28 @@ PaironStatus.prototype = {
 	
 		var basicStatus1stRate = gi("BASIC_STATUS_1ST_RATE");
 		if (!basicStatus1stRate) {
+			DEBUG(caller, "cannot find BASIC_STATUS_1ST_RATE.");
 			return PAIRON_STATUS_ERROR_ELEMENT_NOT_FOUND;
 		}
 		basicStatus1stRate.innerHTML = sprintf("%2.2f", this.rank[BASIC_RANK_1ST] * 100.0);
 	
 		var basicStatusWinRate = gi("BASIC_STATUS_WIN_RATE");
 		if (!basicStatusWinRate) {
+			DEBUG(caller, "cannot find BASIC_STATUS_WIN_RATE.");
 			return PAIRON_STATUS_ERROR_ELEMENT_NOT_FOUND;
 		}
 		basicStatusWinRate.innerHTML = sprintf("%2.2f", (this.rank[BASIC_RANK_1ST] + this.rank[BASIC_RANK_2ND]) * 100.0);
 		
 		var basicStatusGoalRate = gi("BASIC_STATUS_GOAL_RATE");
 		if (!basicStatusGoalRate) {
+			DEBUG(caller, "cannot find BASIC_STATUS_GOAL_RATE.");
 			return PAIRON_STATUS_ERROR_ELEMENT_NOT_FOUND;
 		}
 		basicStatusGoalRate.innerHTML = sprintf("%2.2f", this.goalRate * 100.0);
 		
 		var basicStatusHoujuRate = gi("BASIC_STATUS_HOUJU_RATE");
 		if (!basicStatusHoujuRate) {
+			DEBUG(caller, "cannot find BASIC_STATUS_HOUJU_RATE.");
 			return PAIRON_STATUS_ERROR_ELEMENT_NOT_FOUND;
 		}
 		basicStatusHoujuRate.innerHTML = sprintf("%2.2f", this.houjuRate * 100.0);
@@ -797,7 +847,7 @@ var PaironStatusInput = function() {
 	this.status = undefined;
 };
 PaironStatusInput.prototype = {
-	initialize : function(statusHandle) {
+	initialize : function(statusHandle, inputFrame) {
 		var ret = PAIRON_OK;
 		var fname = "initialize()";
 		var caller = this.name + "::" + fname;
@@ -806,10 +856,7 @@ PaironStatusInput.prototype = {
 		
 		this.status = statusHandle;
 		
-		ret = this.updateForm();
-		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
-		
-		ret = this.setEventHandler();
+		ret = this.createForm();
 		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
 		
 		return ret;
@@ -817,6 +864,51 @@ PaironStatusInput.prototype = {
 	terminate : function() {
 		this.status = undefined;
 		return PAIRON_OK;
+	},
+	createForm : function() {
+		var ret = PAIRON_OK;
+		var fname = "createForm()";
+		var caller = this.name + "::" + fname;
+		
+		this.xmlReader = new XmlReader();
+		
+		ret = this.xmlReader.initialize();
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		var xhrCallback = function(state, reader, arg) {
+			if (state == LIB_STORAGE_OK) {
+				var inputDivElement = reader.getXml().getElementById("input");
+				
+				ret = arg.createFormAfterCallback(inputDivElement);
+				if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+			} else {
+				DEBUG(caller, "Cannot read xml response.");
+			}
+		};
+		
+		ret = this.xmlReader.setXhrCallback(xhrCallback, this);
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		ret = this.xmlReader.loadXml("pairon_status.xml");
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		return ret;
+	},
+	createFormAfterCallback : function(inputDivElement) {
+		var ret = PAIRON_OK;
+		var fname = "createFormAfterCallback()";
+		var caller = this.name + "::" + fname;
+		
+		this.topElement = gi("INPUT_BLOCK");
+		this.topElement.innerHTML = inputDivElement.innerHTML;
+		
+		ret = this.updateForm();
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		ret = this.setEventHandler();
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
+		
+		return ret;
 	},
 	updateForm : function() {
 		var parent = this;

@@ -18,7 +18,9 @@ PaironGallery.prototype = {
 		var ret = PAIRON_OK;
 		var fname = "initialize()";
 		var caller = this.name + "::" + fname;
-	
+		
+		document.title = "麻雀戦績ビュアー";
+		
 		this.element = gi(OPERATION_TARGET_ELEMENT_NAME);
 		if (!this.element) {
 			console.log("element of '" + OPERATION_TARGET_ELEMENT_NAME + "' is not found.");
@@ -956,4 +958,9 @@ PaironBalloon.prototype = {
 		this.upperElement.style.display = "none";
 		return PAIRON_OK;
 	}
+};
+
+var PaironGalleryInput = function() {
+};
+PaironGalleryInput.prototype = {
 };

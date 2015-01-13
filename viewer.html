@@ -1,8 +1,8 @@
 ﻿<html>
 <head>
-	<title>麻雀戦歴ビュアー</title>
 	<link rel="stylesheet" href="viewer.css" hreflang="ja" charset="UTF-8" type="text/css" media="handheld,screen" />
 	<script type="text/javascript" src="sprintf.js"></script>
+	<script type="text/javascript" src="lib/xml/jkl-parsexml.js"></script>
 	<script type="text/javascript" src="cookie.js"></script>
 	<script type="text/javascript" src="lib/audio/lib_audio.js"></script>
 	<script type="text/javascript" src="pairon_common.js"></script>
@@ -12,89 +12,8 @@
 	<script type="text/javascript" src="viewer.js"></script>
 </head>
 <body>
-<div class="contBlock" id="CONT_TOTAL_STATUS">
-	<!-- 総合戦歴 -->
-	<table class="statusTable">
-		<tr>
-			<td colspan="3" class="statusHeadTd">基本戦績データ</td>
-		</tr>
-		<tr>
-			<td class="statusLabelTdTop">1位率：</td>
-			<td class="statusValueTd" id="BASIC_STATUS_1ST_RATE">26.0</td>
-			<td class="statusLabelTdEnd">%</td>
-		</tr>
-		<tr>
-			<td class="statusLabelTdTop">連対率：</td>
-			<td class="statusValueTd" id="BASIC_STATUS_WIN_RATE">26.0</td>
-			<td class="statusLabelTdEnd">%</td>
-		</tr>
-		<tr>
-			<td class="statusLabelTdTop">和了率：</td>
-			<td class="statusValueTd" id="BASIC_STATUS_GOAL_RATE">26.0</td>
-			<td class="statusLabelTdEnd">%</td>
-		</tr>
-		<tr>
-			<td class="statusLabelTdTop">放銃率：</td>
-			<td class="statusValueTd" id="BASIC_STATUS_HOUJU_RATE">26.0</td>
-			<td class="statusLabelTdEnd">%</td>
-		</tr>
-	</table>
-	<div class="garphDiv">
-		<div class="rankGraphDiv" id="RANK_GRAPH">
-			<div class="rankInnerDiv1" id="RANK_1"></div>
-			<div class="rankInnerDiv2" id="RANK_2"></div>
-			<div class="rankInnerDiv3" id="RANK_3"></div>
-			<div class="rankInnerDiv4" id="RANK_4"></div>
-		</div>
-		<div class="rankDataDiv">
-			<span>1位:</span>
-			<span class="rankValueSpan" id="RANK_VALUE_1">26.0</span>
-			<span>2位:</span>
-			<span class="rankValueSpan" id="RANK_VALUE_2">26.0</span>
-			<span>3位:</span>
-			<span class="rankValueSpan" id="RANK_VALUE_3">26.0</span>
-			<span>4位:</span>
-			<span class="rankValueSpan" id="RANK_VALUE_4">26.0</span>
-		</div>
-		<div class="goalGraphDiv" id="GOAL_GRAPH">
-			<div class="goalInnerDiv1" id="GOAL_REACH"></div>
-			<div class="goalInnerDiv2" id="GOAL_HURO"></div>
-			<div class="goalInnerDiv3" id="GOAL_DAMA"></div>
-		</div>
-		<div class="goalDataDiv">
-			<span>和了割合 立直:</span>
-			<span class="rankValueSpan" id="GOAL_VALUE_REACH">26.0</span>
-			<span>副露:</span>
-			<span class="rankValueSpan" id="GOAL_VALUE_HURO">26.0</span>
-			<span>黙聴:</span>
-			<span class="rankValueSpan" id="GOAL_VALUE_DAMA">26.0</span>
-		</div>
-	</div>
-	<canvas class="processGraphCanvas" id="PROCESS_CANVAS">
-	</canvas>
-</div>
-<div class="contBlock" id="CONT_GALLERY" style="display:none;">
-</div>
-<div class="inputBlock">
-	<form action="#">
-		<label for="INPUT_RANK_1">1位率:</label><input id="INPUT_RANK_1" name="INPUT_RANK_1" type="text" value="0.25" />
-		<label for="INPUT_RANK_2">2位率:</label><input id="INPUT_RANK_2" name="INPUT_RANK_2" type="text" value="0.25" />
-		<label for="INPUT_RANK_3">3位率:</label><input id="INPUT_RANK_3" name="INPUT_RANK_3" type="text" value="0.25" />
-		<label for="INPUT_RANK_4">4位率:</label><input id="INPUT_RANK_4" name="INPUT_RANK_4" type="text" value="0.25" />
-		<br />
-		<label for="INPUT_GOAL_REACH">立直率:</label><input id="INPUT_GOAL_REACH" name="INPUT_GOAL_REACH" type="text" value="0.33" />
-		<label for="INPUT_GOAL_HURO">副露率:</label><input id="INPUT_GOAL_HURO" name="INPUT_GOAL_HURO" type="text" value="0.33" />
-		<label for="INPUT_GOAL_DAMA">黙聴率:</label><input id="INPUT_GOAL_DAMA" name="INPUT_GOAL_DAMA" type="text" value="0.34" />
-		<br />
-		<label for="INPUT_GOAL_RATE">和了率:</label><input id="INPUT_GOAL_RATE" name="INPUT_GOAL_RATE" type="text" value="0.25" />
-		<label for="INPUT_HOUJU_RATE">放銃率:</label><input id="INPUT_HOUJU_RATE" name="INPUT_HOUJU_RATE" type="text" value="0.25" />
-		<input type="button" id="INPUT_STATUS_BUTTON" value="反映" />
-	</form>
-	<form action="#" class="gradeForm" id="GRADE_FORM">
-		<input type="text" class="inputGradeText" id="INPUT_GRADE_TEXT" />
-		<input type="button" class="inputGradeButton" id="INPUT_GRADE_BUTTON" value="追加" />
-		<input type="button" class="inputGradeButton" id="INPUT_GRADE_DELETE_BUTTON" value="消去" />
-	</form>
-</div>
+<div class="contBlock" id="CONT_TOTAL_STATUS"></div>
+<div class="contBlock" id="CONT_GALLERY" style="display:none;"></div>
+<div id="INPUT_BLOCK" class="inputBlock"></div>
 </body>
 </html>

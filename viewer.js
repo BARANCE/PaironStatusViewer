@@ -37,15 +37,16 @@ PaironBlockManager.prototype = {
 		
 		this.blockArray = new Array(PAIRON_BLOCK_NUM);
 		this.subBlockArray = new Array(PAIRON_SUB_BLOCK_NUM);
-	
+		
+		this.blockElementArray = new Array(PAIRON_BLOCK_NUM + PAIRON_SUB_BLOCK_NUM);
+		this.inputElementArray = new Array(PAIRON_BLOCK_NUM + PAIRON_SUB_BLOCK_NUM);
+		
+		// ==== Main Block ====
 		// status manager
 		this.blockArray[PAIRON_STATUS_MANAGER_ID] = new PaironStatus();
 		ret = this.blockArray[PAIRON_STATUS_MANAGER_ID].initialize();
 		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
 		this.blockArray[PAIRON_STATUS_MANAGER_ID].viewTime = PAIRON_STATUS_VIEW_TIME;
-		var inputHandle = new PaironStatusInput();
-		ret = inputHandle.initialize(this.blockArray[PAIRON_STATUS_MANAGER_ID]);
-		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
 		
 		// gallery manager
 		this.blockArray[PAIRON_GALLERY_MANAGER_ID] = new PaironGallery();
@@ -53,15 +54,13 @@ PaironBlockManager.prototype = {
 		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
 		this.blockArray[PAIRON_GALLERY_MANAGER_ID].viewTime = PAIRON_GALLERY_VIEW_TIME;
 		
+		// ==== Sub Block ====
 		// audio manager
 		this.subBlockArray[PAIRON_AUDIO_MANAGER_ID] = new PaironAudio();
 		ret = this.subBlockArray[PAIRON_AUDIO_MANAGER_ID].initialize();
-		if (ret != PAIRON_OK) {
-			console.log("this browser will not support playing audio.");
-			ret = PAIRON_OK;
-		}
+		if(ERROR_IF_NOT_OK(caller, ret)) return ret;
 		
-		this.update();
+		setTimeout(this.update.bind(this), 2000);
 		
 		return ret;
 	},
@@ -94,3 +93,8 @@ PaironBlockManager.prototype = {
 	}
 };
 
+var ContBlock = function() {
+};
+ContBlock.prototype = {
+	
+};

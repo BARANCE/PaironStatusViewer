@@ -40,7 +40,7 @@ td.statusLabelTdTop {
 td.statusValueTd {
 	line-height : 10px;
 	font-weight : bold;
-	color : #ff0000;
+	color : #ffff00;
 	min-width : 50px;
 	text-align : right;
 }
