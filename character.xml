@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="Shift_JIS" ?>
+<character>
+	<cd>
+		<name>白檀リリィ</name>
+		<age>12</age>
+		<comment>「白檀リリィ。こっちは、じいや。リリィのおじいさんなの」</comment>
+		<picture>./SPList/Riri.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>リシア・グッドフェロー</name>
+		<age>16</age>
+		<comment>「一人慣れてるから。でも、できれば、一緒がいい」</comment>
+		<picture>./SPList/Risia1.png</picture>
+		<have>["N", "An", "Sp", "Sp2", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>フェリシア</name>
+		<age>15</age>
+		<comment>「悪魔のコスプレをしてるんじゃなくて、本物の悪魔だって言ってるのに、みんな『うは、設定詳しく教えて！』とか言って信じてくれないですぅ」</comment>
+		<picture>./SPList/Ferisia.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>ジブリール</name>
+		<age>20</age>
+		<comment>「ジブリールだ。私から離れるなよ！」</comment>
+		<picture>./SPList/Ziburiru.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>阿行</name>
+		<age>105</age>
+		<comment>「ゆらと一緒に、人間にわるさする幽霊や妖怪をやっつけてるんだなも」</comment>
+		<picture>./SPList/Agyou.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>鳴嶋晶</name>
+		<age>18</age>
+		<comment>「ちゃんと付いて来てよね！」</comment>
+		<picture>./SPList/Akira.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>アキュラ・シュヴァイツェル＝シュベルグ</name>
+		<age>17</age>
+		<comment>「わ、私だって恋くらいする！文句あるのか？」</comment>
+		<picture>./SPList/Akyura.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>笹川杏</name>
+		<age>17</age>
+		<comment>「笹川杏です。ちっちゃいけど、高校生なんですよ？」</comment>
+		<picture>./SPList/Anzu.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>アンジェリーク・ドゥ・ラ・パトリエール</name>
+		<age>16</age>
+		<comment>「アンジェと申します。よろしくお願いいたしますわ」</comment>
+		<picture>./SPList/Anzye1.png</picture>
+		<have>["N", "Sp", "Sp2", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>アンジェリーク・ドゥ・ラ・パトリエール</name>
+		<age>16</age>
+		<comment>「アンジェと申します。よろしくお願いいたしますわ」</comment>
+		<picture>./SPList/Anzye2.png</picture>
+		<have>["N", "Sp", "Sp2", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>青山あろえ</name>
+		<age>22</age>
+		<comment>「ちちち、小さいからってバカにしないでください！」</comment>
+		<picture>./SPList/Aroe.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>あると</name>
+		<age>??</age>
+		<comment>「ボクの名前は、あると、だよ」</comment>
+		<picture>./SPList/Aruto.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>猫宮アヤノ</name>
+		<age>16</age>
+		<comment>「ね・こ・み・やです！ぬこじゃないの」</comment>
+		<picture>./SPList/Ayano.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>カノン・クライシス</name>
+		<age>??</age>
+		<comment>「棺桶でてこおぉーいッ！」</comment>
+		<picture>./SPList/Cannon.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>エクレア</name>
+		<age>19</age>
+		<comment>「スカート短すぎるかなあ。でも、この方が動きやすいし…。それに、キミだって嫌いじゃないんでしょ？」</comment>
+		<picture>./SPList/Ekurea.png</picture>
+		<have>["N", "Sp2", "Vo", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>エルミア＝シンタクラス</name>
+		<age>18</age>
+		<comment>「お願い精霊さん、わたしに力を！」</comment>
+		<picture>./SPList/Ermia1.png</picture>
+		<have>["N", "Sp", "Sp2", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>エルミア＝シンタクラス</name>
+		<age>18</age>
+		<comment>「シンタクラスって、言いにくいですか？エルミア、って呼んでください」</comment>
+		<picture>./SPList/Ermia2.png</picture>
+		<have>["N", "Sp", "Sp2", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>虎華</name>
+		<age>??</age>
+		<comment>「虎華です。一緒にがんばろ！」</comment>
+		<picture>./SPList/Fuka1.png</picture>
+		<have>["N", "Sp", "Sp2"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>虎華</name>
+		<age>??</age>
+		<comment>「虎華です。一緒にがんばろ！」</comment>
+		<picture>./SPList/Fuka2.png</picture>
+		<have>["N", "Sp", "Sp2"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>フラム</name>
+		<age>1414</age>
+		<comment>「アタシのサボり能力は、魔界一ッ！」</comment>
+		<picture>./SPList/Furamu.png</picture>
+		<have>["N", "An", "Sp2"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>神代フレイヤ</name>
+		<age>17</age>
+		<comment>「え？カチューシャが動いた？ちょっと何を言ってるのか分からなーい」</comment>
+		<picture>./SPList/Fureiya.png</picture>
+		<have>["N", "An/R","Sp2", "Vo", "Sp/Vo"]</have>
+		<rate>超高い</rate>
+	</cd>
+	<cd>
+		<name>フルール</name>
+		<age>??</age>
+		<comment>「花護人のフルールでし。一緒にがんばるでし」</comment>
+		<picture>./SPList/Fururu.png</picture>
+		<have>["Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>みまさかいづみ</name>
+		<age>10</age>
+		<comment>「こ、こんにちはぁ」</comment>
+		<picture>./SPList/Izumi.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>カモミィル・ローマン</name>
+		<age>200歳以上</age>
+		<comment>「人間は興味深い…。でも、価値観も快感も分かち合えないのが、少しだけ、寂しいわ」</comment>
+		<picture>./SPList/Kamomiru.png</picture>
+		<have>["N", "Sp2", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>新條かりん</name>
+		<age>12</age>
+		<comment>「一人にしないでよ…。…だからッ、一人にしないでってば！アンタ耳おかしいんじゃないの！」</comment>
+		<picture>./SPList/Karin.png</picture>
+		<have>["Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>土御門桔梗</name>
+		<age>18</age>
+		<comment>「正義の鉄槌、受けてみなさい！」</comment>
+		<picture>./SPList/Kikyou.png</picture>
+		<have>["Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>蜜月ノ煌</name>
+		<age>3</age>
+		<comment>「冥がいれば…、私は他に何もいらないわ」</comment>
+		<picture>./SPList/Kira.png</picture>
+		<have>["N", "An", "Sp", "Vo"]</have>
+		<rate>超高い</rate>
+	</cd>
+	<cd>
+		<name>奈仔ここな</name>
+		<age>15</age>
+		<comment>「よく友達に『ここなはいつも何か食べてるね』って言われちゃうんですけど、そんなことないですよね？ね？　あ、これは新商品のお菓子です。どうぞ♪」</comment>
+		<picture>./SPList/Kokona.png</picture>
+		<have>["N", "An/R", "Sp", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>奈仔ここな</name>
+		<age>15</age>
+		<comment>「センパイ！お昼一緒に食べましょ！」</comment>
+		<picture>./AnList/Kokona.png</picture>
+		<have>["N", "An/R", "Sp", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>一之瀬琴未</name>
+		<age>16</age>
+		<comment>「胸騒ぎがする…」</comment>
+		<picture>./SPList/Kotomi1.png</picture>
+		<have>["N", "An", "Sp", "Sp3", "Vo", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>一之瀬琴未</name>
+		<age>16</age>
+		<comment>「暗記できたかも！」</comment>
+		<picture>./SPList/Kotomi2.png</picture>
+		<have>["N", "An", "Sp", "Sp3", "Vo", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>クイン</name>
+		<age>??</age>
+		<comment>「ボクはすり潰したりんごが好きなんだ」</comment>
+		<picture>./SPList/Kuin.png</picture>
+		<have>["Sp2", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>氷川玖月</name>
+		<age>14</age>
+		<comment>「あー、だる。だるい。けど、戦う。」</comment>
+		<picture>./SPList/Kutsuki.png</picture>
+		<have>["N" , "Sp", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>神矢真水</name>
+		<age>16</age>
+		<comment>「お掃除完了。さーて、お茶でも淹れようっと！」</comment>
+		<picture>./SPList/Mamizu1.png</picture>
+		<have>["N" , "Sp", "Sp2", "Vo", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>神矢真水</name>
+		<age>16</age>
+		<comment>「神矢真水です。よろしくお願いします」</comment>
+		<picture>./SPList/Mamizu2.png</picture>
+		<have>["N" , "Sp", "Sp2", "Vo", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>マサムネ</name>
+		<age>16</age>
+		<comment>「フフッ。馬鹿な事を…」</comment>
+		<picture>./SPList/Masamune1.png</picture>
+		<have>["N" , "An", "An/R", "Sp2", "Sp3", "Ex", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>マサムネ</name>
+		<age>16</age>
+		<comment>「よろしく頼むぜ」</comment>
+		<picture>./SPList/Masamune2.png</picture>
+		<have>["N" , "An", "An/R", "Sp2", "Sp3", "Ex", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>マサムネ</name>
+		<age>16</age>
+		<comment>「フフッ。馬鹿な事を…」</comment>
+		<picture>./SPList/Masamune3.png</picture>
+		<have>["N" , "An", "An/R", "Sp2", "Sp3", "Ex", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>蜜月ノ冥</name>
+		<age>3</age>
+		<comment>「綺麗な煌が汚されるくらいなら、あたしが、あたしがっ！」</comment>
+		<picture>./SPList/Mei.png</picture>
+		<have>["N" , "An", "Ex", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>鈴河翠</name>
+		<age>16</age>
+		<comment>「右よし！左よし！」</comment>
+		<picture>./SPList/Midori.png</picture>
+		<have>["Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>白妙ミツキ</name>
+		<age>15</age>
+		<comment>「このリボンはね、ミツキのラッキーアイテムなの♪」</comment>
+		<picture>./SPList/Mitsuki.png</picture>
+		<have>["N", "An/R", "Sp", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>深雪</name>
+		<age>15</age>
+		<comment>「深雪です。よろしくね！」</comment>
+		<picture>./SPList/Miyuki.png</picture>
+		<have>["N", "An", "Sp", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>深雪(幼少期)</name>
+		<age>??</age>
+		<comment>「あれ？雪だるまって、こんな形だったっけ…」</comment>
+		<picture>./SPList/Miyuki_y.png</picture>
+		<have>["Sp", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>天満みずき</name>
+		<age>16</age>
+		<comment>「もっと、女らしく、かぁ…。『女らしく』って、一体どうすればいいんだろう…？」</comment>
+		<picture>./SPList/Mizuki1.png</picture>
+		<have>["N", "An", "An/R", "Sp2", "Sp3", "Sp4", "Vo", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>天満みずき</name>
+		<age>16</age>
+		<comment>「天満みずき、って言うんだ。これからよろしくね！」</comment>
+		<picture>./SPList/Mizuki2.png</picture>
+		<have>["N", "An", "An/R", "Sp2", "Sp3", "Sp4", "Vo", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>天満みずき</name>
+		<age>16</age>
+		<comment>「もっと、女らしく、かぁ…。『女らしく』って、一体どうすればいいんだろう…？」</comment>
+		<picture>./SPList/Mizuki3.png</picture>
+		<have>["N", "An", "An/R", "Sp2", "Sp3", "Sp4", "Vo", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>西園寺夢衣美</name>
+		<age>14</age>
+		<comment>「世界には無意味な事しか無いわ！」</comment>
+		<picture>./SPList/Muimi.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>柳沢ねるこ</name>
+		<age>17</age>
+		<comment>「『逃げちゃダメだ。逃げちゃダメだ。逃げちゃダメだ』って言うけど、逃げた方がいい時だって、結構多いよね」</comment>
+		<picture>./SPList/Neruko.png</picture>
+		<have>["N", "Sp", "Sp/Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>青木野菜</name>
+		<age>11</age>
+		<comment>「あたし、青木のな。二人目の戦士はあなた？」</comment>
+		<picture>./SPList/Nona.png</picture>
+		<have>["N", "An", "Sp", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>ポプラ</name>
+		<age>14</age>
+		<comment>「ポプラです。よろしくね♪」</comment>
+		<picture>./SPList/Popura.png</picture>
+		<have>["N", "An", "Sp", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>プリムヴェーラ・スラート・ル・フルール・ド・スリジェ</name>
+		<age>7～8</age>
+		<comment>「このプリムに、力を貸して欲しいですの！」</comment>
+		<picture>./SPList/Purimu.png</picture>
+		<have>["N", "An", "Sp2", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>ライチ</name>
+		<age>16</age>
+		<comment>「顔色が良くなりましたね！」</comment>
+		<picture>./SPList/Raichi.png</picture>
+		<have>["N", "An", "Sp4", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>紫ノ咲蘭子</name>
+		<age>17</age>
+		<comment>「一緒に、しよ？」</comment>
+		<picture>./SPList/Ranko1.png</picture>
+		<have>["N", "Sp", "Sp2"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>紫ノ咲蘭子</name>
+		<age>17</age>
+		<comment>「一緒に、しよ？」</comment>
+		<picture>./SPList/Ranko2.png</picture>
+		<have>["N", "Sp", "Sp2"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>北條澪</name>
+		<age>17</age>
+		<comment>「あの位置から…、ジャンプよ！」</comment>
+		<picture>./SPList/Rei.png</picture>
+		<have>["N", "An", "Sp2", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>レイラ・マーティン</name>
+		<age>17</age>
+		<comment>「神様が舞い降りて来ました」</comment>
+		<picture>./SPList/Reira.png</picture>
+		<have>["N", "An", "Sp"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>リエン・プレヤード</name>
+		<age>16</age>
+		<comment>「リエン・プレヤードデス。カンザスから留学してきた、ちょっとコスプレ好きの普通の女の子デス」</comment>
+		<picture>./SPList/Rien.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>リリアドール</name>
+		<age>1</age>
+		<comment>「マスターがしてくれたように、私はマスターを護るんです！」</comment>
+		<picture>./SPList/Ririadoru1.png</picture>
+		<have>["N", "An", "Sp", "Sp3", "Vo", "Sp/Vo"]</have>
+		<rate>超高い</rate>
+	</cd>
+	<cd>
+		<name>リリアドール</name>
+		<age>1</age>
+		<comment>「リリアドールです。大きくなってしまいました…」</comment>
+		<picture>./SPList/Ririadoru2.png</picture>
+		<have>["N", "An", "Sp", "Sp3", "Vo", "Sp/Vo"]</have>
+		<rate>超高い</rate>
+	</cd>
+	<cd>
+		<name>リシア・グッドフェロー</name>
+		<age>16</age>
+		<comment>「植物にだって、心があるから…」</comment>
+		<picture>./SPList/Risia2.png</picture>
+		<have>["N", "An", "Sp", "Sp2", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>ローゼリッタ・ドルンレースヒェン</name>
+		<age>??</age>
+		<comment>「百年の刻を経て、姫が目覚めた時には、白い薔薇の綺麗なお城は、茨が絡み合う呪いの城となっていた。いつしか姫は白い薔薇の王女ではなく、茨の王女と呼ばれるようになった」</comment>
+		<picture>./SPList/Rozeritta.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>るきの</name>
+		<age>13</age>
+		<comment>「るきのです！るんるんのる！キンキンのき！のんびりのの…」</comment>
+		<picture>./SPList/Rukino.png</picture>
+		<have>["N", "An", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>ルミナ＝ルネサ</name>
+		<age>14</age>
+		<comment>「ルミナ＝ルネサ。一緒にやるからには、勝ちにいくゾ！」</comment>
+		<picture>./SPList/Rumina.png</picture>
+		<have>["N", "An", "Sp", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>遼丹</name>
+		<age>23</age>
+		<comment>「んー？なんで追われてるかってー？フフッ、ボクがねー、世界の終わりを知ってるからなんだ」</comment>
+		<picture>./SPList/Ryao.png</picture>
+		<have>["N", "Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>高比良さくや</name>
+		<age>15</age>
+		<comment>「麻雀って、面白いですね！」</comment>
+		<picture>./SPList/Sakuya1.png</picture>
+		<have>["N", "Sp", "Sp2", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>高比良さくや</name>
+		<age>15</age>
+		<comment>「麻雀って、面白いですね！」</comment>
+		<picture>./SPList/Sakuya2.png</picture>
+		<have>["N", "Sp", "Sp2", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>せりか</name>
+		<age>13</age>
+		<comment>「せりかよ。一緒に頑張ってね！」</comment>
+		<picture>./SPList/Serika.png</picture>
+		<have>["N", "An", "Sp", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>セティ・ルーセント</name>
+		<age>16</age>
+		<comment>「んあ゛～！カワイイって言うなぁ！撫でるなぁ！ボクは船長なんだぞ！」</comment>
+		<picture>./SPList/Sethi.png</picture>
+		<have>["N", "Sp2", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>ハリケーン・シイナ</name>
+		<age>16</age>
+		<comment>「シイナだよ。ヨロシク！」</comment>
+		<picture>./SPList/Shina1.png</picture>
+		<have>["N", "Sp", "Sp2", "Sp3"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>ハリケーン・シイナ</name>
+		<age>16</age>
+		<comment>「シイナだよ。ヨロシク！」</comment>
+		<picture>./SPList/Shina2.png</picture>
+		<have>["N", "Sp", "Sp2", "Sp3"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>ハリケーン・シイナ</name>
+		<age>16</age>
+		<comment>「シイナだよ。ヨロシク！」</comment>
+		<picture>./SPList/Shina3.png</picture>
+		<have>["N", "Sp", "Sp2", "Sp3"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>ソフィア・バードランド</name>
+		<age>??</age>
+		<comment>「ソフィア・バードランドです！…一応シカバネです」</comment>
+		<picture>./SPList/Sofi.png</picture>
+		<have>["N", "Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>桃花シャムニール</name>
+		<age>15</age>
+		<comment>「え？このブレスレットは占いの道具なのかって？違うよ～。これはね、右左が分からなくなるから付けてるんだ～。ん？なんか変なこと言ったかなぁ？」</comment>
+		<picture>./SPList/Syamuniru.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>シェリー・マイン</name>
+		<age>16</age>
+		<comment>「もう帰っちゃうのですか？ふみー…」</comment>
+		<picture>./SPList/Syeri1.png</picture>
+		<have>["N", "Sp", "Sp2", "Sp3", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>シェリー・マイン</name>
+		<age>16</age>
+		<comment>「シェリー・マインです。これからいつも一緒なのです」</comment>
+		<picture>./SPList/Syeri2.png</picture>
+		<have>["N", "Sp", "Sp2", "Sp3", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>シェリー・マイン</name>
+		<age>16</age>
+		<comment>「シェリー・マインです。これからいつも一緒なのです」</comment>
+		<picture>./SPList/Syeri3.png</picture>
+		<have>["N", "Sp", "Sp2", "Sp3", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>テト</name>
+		<age>About 1500000000</age>
+		<comment>「テトですよの。これからはずっと一緒ですよの」</comment>
+		<picture>./SPList/Teto.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>トーコ＝シャンティ＝ヤエクラ</name>
+		<age>20</age>
+		<comment>「一緒にするであります！」</comment>
+		<picture>./SPList/Toko1.png</picture>
+		<have>["Sp", "Sp2"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>トーコ＝シャンティ＝ヤエクラ</name>
+		<age>20</age>
+		<comment>「一緒にするであります！」</comment>
+		<picture>./SPList/Toko2.png</picture>
+		<have>["Sp", "Sp2"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>和泉ゆかり</name>
+		<age>16</age>
+		<comment>「お・は・よ！兄さん♪」</comment>
+		<picture>./SPList/Yukari.png</picture>
+		<have>["N", "Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>相戸優希</name>
+		<age>14</age>
+		<comment>「我が名は終焉の女神、ブラッディ・リリス。貴様を我が下僕にしてやろう」</comment>
+		<picture>./SPList/Yuki.png</picture>
+		<have>["N", "Sp2", "Vo", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>北床ゆなか</name>
+		<age>17</age>
+		<comment>「北床ゆなかです。よろしくなのです」</comment>
+		<picture>./SPList/Yunaka.png</picture>
+		<have>["Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>椿ゆに</name>
+		<age>9</age>
+		<comment>「お茶はどれも好きじゃが、やっぱり昆布茶が一番好きじゃなあ。あと、おせんべいも欲しいのじゃ」</comment>
+		<picture>./SPList/Yuni1.png</picture>
+		<have>["N", "An", "Sp", "Sp2", "Sp/Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>椿ゆに</name>
+		<age>9</age>
+		<comment>「まったりするのじゃあ～」</comment>
+		<picture>./SPList/Yuni2.png</picture>
+		<have>["N", "An", "Sp", "Sp2", "Sp/Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>布留部ゆら</name>
+		<age>16</age>
+		<comment>「おーい、阿行、仕事すんぞー！」</comment>
+		<picture>./SPList/Yura1.png</picture>
+		<have>["N", "An", "Sp", "Sp2", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>布留部ゆら</name>
+		<age>16</age>
+		<comment>「バ、バカヤロウ！置いてくんじゃねー！」</comment>
+		<picture>./SPList/Yura2.png</picture>
+		<have>["N", "An", "Sp", "Sp2", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>布留部ゆら</name>
+		<age>16</age>
+		<comment>「おーい、阿行、仕事すんぞー！」</comment>
+		<picture>./SPList/Yura3.png</picture>
+		<have>["N", "An", "Sp", "Sp2", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>日々乃れむ</name>
+		<age>16</age>
+		<comment>「いやだ～、しっぽが止まらない～、エヘヘヘ」</comment>
+		<picture>./SPList/Remu.png</picture>
+		<have>["N", "An", "Sp2", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>ニーネ・ウィンチェスター</name>
+		<age>21</age>
+		<comment>「一緒に楽しまない？」</comment>
+		<picture>./SPList/Nine.png</picture>
+		<have>["N", "Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>白白先生</name>
+		<age>26</age>
+		<comment>「白白先生です。よろしくね♪」</comment>
+		<picture>./SPList/Paipaisensei.png</picture>
+		<have>["An", "Sp"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>シラユキ</name>
+		<age>16</age>
+		<comment>「りんご好きなんだけど、食べるとなんかほわっとしちゃって。記憶が曖昧になっちゃうの」</comment>
+		<picture>./SPList/Sirayuki.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>青石夕歩</name>
+		<age>16</age>
+		<comment>「この景色が見たかったんだ！ありがとう！」</comment>
+		<picture>./AnList/Yuho.png</picture>
+		<have>["An", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>ルナ・ル・ベル</name>
+		<age>??</age>
+		<comment>「ルナ・ル・ベルです。よろしくね！」</comment>
+		<picture>./AnList/Runaruberu.png</picture>
+		<have>["An", "Sp2", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>ルナ・ル・ベル</name>
+		<age>??</age>
+		<comment>「ルナ・ル・ベルです。よろしくね！」</comment>
+		<picture>./SPList/Runaruberu.png</picture>
+		<have>["An", "Sp2", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>ルーニャ・ラウラ</name>
+		<age>17</age>
+		<comment>「あっ、チョコあげる…。あと、キャンディもあげる…」</comment>
+		<picture>./AnList/Runya.png</picture>
+		<have>["N", "An", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>フランツィスカ・ルートヴィヒ・マリア・アッヒェンバッハ・成瀬川</name>
+		<age>??</age>
+		<comment>「Wow! You're Perfect!」</comment>
+		<picture>./SPList/Furan.png</picture>
+		<have>["N", "Sp2", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>氷室愛海</name>
+		<age>14</age>
+		<comment>「大丈夫…。まだ慌てるような時間じゃない」</comment>
+		<picture>./AnList/Manami.png</picture>
+		<have>["An", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>ジェーン・ギルバート</name>
+		<age>17</age>
+		<comment>「ギルバート家は大所帯でね。アタシが稼ぐしかないんだよ」</comment>
+		<picture>./AnList/Jeen.png</picture>
+		<have>["N", "An", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>ユピテル</name>
+		<age>3</age>
+		<comment>「ユピテルはお風呂が大好きなのです。あなたも一緒に入るです？」</comment>
+		<picture>./AnList/Yupiteru.png</picture>
+		<have>["N", "An/R", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>永名刹那</name>
+		<age>20</age>
+		<comment>「お兄様、一緒にしましょ？」</comment>
+		<picture>./AnList/Setsuna.png</picture>
+		<have>["N", "An", "Vo"]</have>
+		<rate>超低い</rate>
+	</cd>
+	<cd>
+		<name>香咲桜</name>
+		<age>17</age>
+		<comment>「桜は静かにその春を待つのよ…」</comment>
+		<picture>./SPList/Sakura.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>朝霧かがみ</name>
+		<age>17</age>
+		<comment>「魔法使いの才能はなかったけど、今は錬金術の勉強が楽しいの。将来は鉄を金に変えて…ウフフ…」</comment>
+		<picture>./SPList/Kagami.png</picture>
+		<have>["N", "Sp3", "Vo", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>空野真央</name>
+		<age>14</age>
+		<comment>「ゆきちゃんととっても仲良しな、空野真央、中学二年生です！まだまだ未熟な魔王見習いですが、人間界で頑張ります！」</comment>
+		<picture>./AnList/Mao.png</picture>
+		<have>["An/R"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>夢魔</name>
+		<age>??</age>
+		<comment>「体が大きくなると、言動や考え方まで変わっちゃうみたいさね。ん？たとえば？ん～、自分ではよくわからないさね。…試してみるさね？」</comment>
+		<picture>./AnList/Muma.png</picture>
+		<have>["An/R"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>吽行</name>
+		<age>105</age>
+		<comment>「うち、狛犬っちゃ。柏でうってお参りされても困るっちゃね。」</comment>
+		<picture>./SpList/Ungyou.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>鈴木さん</name>
+		<age>100015</age>
+		<comment>「2秒でこんがり、地獄の業火！試してみる？」</comment>
+		<picture>./SpList/Suzukisan.png</picture>
+		<have>["N", "Sp2", "Vo", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>天羽かごめ</name>
+		<age>14</age>
+		<comment>「ちょっーとカワイク甘えれば、何でも買ってくれるもんなぁ～。オトコって本当ちょろいもんですよ。ま、ボクもオトコノコですけどねー。」</comment>
+		<picture>./SpList/Kagome.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>ちまり</name>
+		<age>人間でいうところの14</age>
+		<comment>「名前？ちまりよ。ご主人様に"ちま"って呼ばれてるの。え？ダメダメ！ちまって呼んでいいのは、ご主人様だけなんだからっ」</comment>
+		<picture>./SpList/Chimari.png</picture>
+		<have>["N", "Sp", "Vo", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>ルイ・ローウェン</name>
+		<age>16</age>
+		<comment>「猫が好きすぎて、生きるのが辛い…」</comment>
+		<picture>./SpList/Rui.png</picture>
+		<have>["N", "Ex"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
+		<name>高志之巽</name>
+		<age>??</age>
+		<comment>「あら、貴方…。美味しそうね…」</comment>
+		<picture>./SpList/Tatsumi.png</picture>
+		<have>["N", "Sp2", "Sp/Vo"]</have>
+		<rate>普通</rate>
+	</cd>
+	<cd>
+		<name>皆川麗華</name>
+		<age>17</age>
+		<comment>「キーウィって鳥がおるんやけど、カワイイと思わへん？故郷は遠くて行けへんから、いっつも近くの動物園に見にいくんや。むっちゃカワイイんやで！」</comment>
+		<picture>./SpList/Reika.png</picture>
+		<have>["N", "Sp", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+</character>
