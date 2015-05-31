@@ -6,6 +6,7 @@ var BASIC_RANK_2ND = 1;
 var BASIC_RANK_3RD = 2;
 var BASIC_RANK_4TH = 3;
 var BASIC_RANK_UNKNOWN = 4;
+var BASIC_RANK_NUM = 4;
 var GRADE_HISTORY_NUM = 15;
 
 // Default value of status
@@ -125,9 +126,16 @@ PaironStatus.prototype = {
 		var ret = PAIRON_OK;
 		var fname = "setRank()";
 		var caller = this.name + "::" + fname;
-	
+		
+		
 		if (!this.rank) {
-			this.rank = new Array(4);
+			this.rank = new Array(BASIC_RANK_NUM);
+		}
+		for (var i = 0; i < BASIC_RANK_NUM; i++) {
+			if(isNaN(rankArray[i])) {
+				rankArray[i] = 0.0;
+				console.log("rank[" + i + "] is invalid. So converted to 0.0");
+			}
 		}
 		
 		var rankSum = 0.0;
@@ -163,8 +171,7 @@ PaironStatus.prototype = {
 			this.rank[BASIC_RANK_4TH] = rankArray[BASIC_RANK_4TH];
 		} else {
 			this.rank[BASIC_RANK_4TH] = 1.0 - rankSum;
-			console.log("4th rank is invalid.");
-			ret = PAIRON_INVALID_ARGUMENT;
+			// ぱいろんの順位率が1.0を下回ったり上回ったりするため、4位のエラーチェックは入れないことにします。
 		}
 		rankSum += this.rank[BASIC_RANK_4TH];
 		
@@ -192,6 +199,10 @@ PaironStatus.prototype = {
 		if (!this.goalHuro) this.huro = 0.0;
 		if (!this.goalDama) this.dama = 0.0;
 		
+		if (isNaN(reach)) this.reach = 0.0;
+		if (isNaN(huro)) this.huro = 0.0;
+		if (isNaN(dama)) this.dama = 0.0;
+		
 		var goalSum = 0.0;
 		
 		if (goalSum + reach <= 1.0) {
@@ -217,8 +228,6 @@ PaironStatus.prototype = {
 			this.goalDama = dama;
 		} else {
 			this.goalDama = 1.0 - goalSum;
-			console.log("dama rate is invalid.");
-			ret = PAIRON_INVALID_ARGUMENT;
 		}
 		goalSum += this.goalDama;
 		
@@ -239,7 +248,12 @@ PaironStatus.prototype = {
 		if (!this.gradeHistoryArray) {
 			this.gradeHistoryArray = new Array(GRADE_HISTORY_NUM);
 		}
-	
+		
+		if (grade == "１") grade = BASIC_RANK_1ST;
+		else if (grade == "２") grade = BASIC_RANK_2ND;
+		else if (grade == "３") grade = BASIC_RANK_3RD;
+		else if (grade == "４") grade = BASIC_RANK_4TH;
+		
 		if (grade != BASIC_RANK_1ST &&
 			grade != BASIC_RANK_2ND &&
 			grade != BASIC_RANK_3RD &&
@@ -257,12 +271,26 @@ PaironStatus.prototype = {
 		return ret;
 	},
 	getGoalRate : function() {
+		if (isNaN(this.goalRate)) {
+			this.goalRate = 0.0;
+		}
+		if (this.goalRate < 0.0) {
+			this.goalRate = 0.0;
+		}
+		if (this.goalRate > 1.0) {
+			this.goalRate = 1.0;
+		}
+		
 		return this.goalRate;
 	},
 	setGoalRate : function(goalRate) {
 		var ret = PAIRON_OK;
 		var fname = "setGoalRate()";
 		var caller = this.name + "::" + fname;
+		
+		if (isNaN(goalRate)) {
+			goalRate = 0.0;
+		}
 	
 		if(goalRate >= 0.0 && goalRate <= 1.0) {
 			this.goalRate = goalRate;
@@ -277,13 +305,27 @@ PaironStatus.prototype = {
 		return ret;
 	},
 	getHoujuRate : function() {
+		if (isNaN(this.houjuRate)) {
+			this.houjuRate == 0.0;
+		}
+		if (this.houjuRate < 0.0) {
+			this.houjuRate = 0.0;
+		}
+		if (this.houjuRate > 1.0) {
+			this.houjuRate = 1.0;
+		}
+		
 		return this.houjuRate;
 	},
 	setHoujuRate : function(houjuRate) {
 		var ret = PAIRON_OK;
 		var fname = "setHoujuRate()";
 		var caller = this.name + "::" + fname;
-	
+		
+		if (isNaN(houjuRate)) {
+			houjuRate = 0.0;
+		}
+		
 		if(houjuRate >= 0.0 && houjuRate <= 1.0) {
 			this.houjuRate = houjuRate;
 		} else if (houjuRate < 0.0) {
