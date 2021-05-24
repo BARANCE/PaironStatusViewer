@@ -841,6 +841,14 @@
 		<rate>低い</rate>
 	</cd>
 	<cd>
+		<name>吽行</name>
+		<age>105</age>
+		<comment>「うち、狛犬っちゃ。柏でうってお参りされても困るっちゃね。」</comment>
+		<picture>./SpList/Ungyou2.png</picture>
+		<have>["N", "Sp", "Vo"]</have>
+		<rate>低い</rate>
+	</cd>
+	<cd>
 		<name>鈴木さん</name>
 		<age>100015</age>
 		<comment>「2秒でこんがり、地獄の業火！試してみる？」</comment>
@@ -885,6 +893,22 @@
 		<age>17</age>
 		<comment>「キーウィって鳥がおるんやけど、カワイイと思わへん？故郷は遠くて行けへんから、いっつも近くの動物園に見にいくんや。むっちゃカワイイんやで！」</comment>
 		<picture>./SpList/Reika.png</picture>
+		<have>["N", "Sp", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>ルーニャ・ラウラ</name>
+		<age>17</age>
+		<comment>「あっ、チョコあげる。あと、キャンディもあげる」</comment>
+		<picture>./SpList/Runya.png</picture>
+		<have>["N", "Sp", "Sp/Vo"]</have>
+		<rate>高い</rate>
+	</cd>
+	<cd>
+		<name>詠</name>
+		<age>16</age>
+		<comment>「星の光に導かれて…。占い師、詠と申します」</comment>
+		<picture>./SpList/Yomi.png</picture>
 		<have>["N", "Sp", "Sp/Vo"]</have>
 		<rate>高い</rate>
 	</cd>
