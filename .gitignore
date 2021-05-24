@@ -22,3 +22,5 @@ SP4/
 ダウンロード/
 *.rar
 chusen.html
+!doc/status01.png
+!doc/senseki*
